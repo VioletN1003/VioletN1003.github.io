@@ -38,9 +38,9 @@ function draw() {
   fill(25, second_color, 111, 80);
   rect(xPos,yPos + barHeight*2 + barMargin*2,s,barHeight);   // Bar for second
 
-  if (m != last_min){
-    last_min = m;
-    console.log(m);
+  if (minute() != last_min){
+    last_min = minute();
+    console.log(last_min);
   }
 }
 
